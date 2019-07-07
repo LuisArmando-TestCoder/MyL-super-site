@@ -1,0 +1,28 @@
+.classes {
+    margin-top: var(--space);
+    padding: 100px var(--space);
+    background-image: url('../img/stock/for-cta.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 50vw -5vw #000;
+    color: #fff;
+    h3 {
+        font-size: 30px;
+        text-align: center;
+        max-width: 600px;
+        line-height: 1.5;
+        margin: auto;
+    }
+    a {
+        color: var(--main-bg-color);
+        background: var(--accent-color);
+        padding: 15px 25px;
+        border-radius: 25px;
+        display: block;
+        margin: var(--space) auto;
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,37 @@
+.gallery {
+    overflow: hidden;
+    h2 {
+        color: var(--accent-color);
+        font-size: 30px;
+        @media (max-width: 640px) {
+            font-size: 20px;
+        }
+    }
+}
+
+.gallery > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    li {
+        margin: auto;
+    }
+    img {
+        display: block;
+        object-fit: contain;
+        width: 100vw;
+        height: 50vh;
+        @media (min-width: 640px) {
+            height: 70vh;
+        }
+    }
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}

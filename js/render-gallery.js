@@ -28,7 +28,7 @@
         gallery.style.setProperty('left', `calc(${-index} * 100vw)`);
     }
     moveIndex(0);
-    gallery.addEventListener('click', e => {
+    gallery.parentElement.addEventListener('click', e => {
         if(e.clientX < window.innerWidth / 2) moveIndex(-1);
         else moveIndex(1);
     });

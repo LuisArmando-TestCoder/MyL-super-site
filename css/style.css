@@ -196,7 +196,52 @@ h2::after {
 }
 
 .gallery {
+  --hide: -200px;
   overflow: hidden;
+  position: relative;
+}
+.gallery:hover {
+  --hide: -25px;
+}
+.gallery::before, .gallery::after {
+  display: block;
+  cursor: pointer;
+  text-transform: uppercase;
+  top: 0;
+  bottom: 0;
+  height: 20px;
+  font-size: 20px;
+  padding: 25px 50px;
+  margin: auto;
+  position: absolute;
+  z-index: 1;
+  color: #fff;
+  background: var(--accent-color);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.15, 1.55);
+}
+.gallery::before {
+  content: "Anterior";
+  left: var(--hide);
+  border-radius: 0 25px 25px 0;
+  -webkit-border-radius: 0 25px 25px 0;
+  -moz-border-radius: 0 25px 25px 0;
+  -ms-border-radius: 0 25px 25px 0;
+  -o-border-radius: 0 25px 25px 0;
+}
+.gallery::after {
+  content: "Siguiente";
+  text-align: right;
+  right: var(--hide);
+  border-radius: 25px 0 0 25px;
+  -webkit-border-radius: 25px 0 0 25px;
+  -moz-border-radius: 25px 0 0 25px;
+  -ms-border-radius: 25px 0 0 25px;
+  -o-border-radius: 25px 0 0 25px;
 }
 .gallery h2 {
   color: var(--accent-color);
@@ -422,7 +467,7 @@ h2::after {
 }
 .about__box img {
   width: 100%;
-  height: 300px;
+  height: 500px;
 }
 .about__box p,
 .about__box li {
@@ -506,6 +551,35 @@ h2::after {
   width: 100%;
   max-width: 400px;
   text-align: center;
+}
+
+footer {
+  display: grid;
+  place-content: center;
+  background: #000;
+  color: #fff;
+  padding: 100px;
+  text-align: center;
+}
+footer i {
+  display: block;
+  max-width: 400px;
+  line-height: 1.5;
+}
+footer a {
+  padding: var(--space);
+  margin: var(--space);
+  color: var(--main-bg-color);
+  background: var(--accent-color);
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

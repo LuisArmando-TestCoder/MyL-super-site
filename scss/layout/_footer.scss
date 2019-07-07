@@ -1,0 +1,28 @@
+footer {
+    display: grid;
+    place-content: center;
+    background: #000;
+    color: #fff;
+    padding: 100px;
+    text-align: center;
+    i {
+        display: block;
+        max-width: 400px;
+        line-height: 1.5;
+    }
+    a {
+        padding: var(--space);
+        margin: var(--space);
+        color: var(--main-bg-color);
+        background: var(--accent-color);
+        display: inline-block;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+}
+}

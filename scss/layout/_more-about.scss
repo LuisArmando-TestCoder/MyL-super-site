@@ -1,0 +1,47 @@
+.more-about {
+    padding: 75px var(--space);
+    margin: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: inset 100vw 0 #000e;
+    background-color: #000;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url('../img/stock/meeting.jpeg');
+    color: #fff;
+
+    @media (min-width: 640px) {
+        padding: 75px var(--space);
+    }
+
+    &>* {
+        display: block;
+        padding: var(--space) 0;
+        line-height: 1.5;
+        font-size: 20px;
+        text-align: center;
+        margin: auto;
+        max-width: 460px;
+    }
+
+    h3 {
+        padding-bottom: 75px;
+        font-size: 30px;
+    }
+
+    i {
+        display: block;
+        font-style: italic;
+        letter-spacing: 1px;
+
+        &::before,
+        &::after {
+            content: "\"";
+        }
+    }
+
+    div {
+        padding-bottom: 75px;
+    }
+}

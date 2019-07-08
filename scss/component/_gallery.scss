@@ -28,6 +28,9 @@
         -ms-transition: 0.5s;
         -o-transition: 0.5s;
         transition-timing-function: cubic-bezier(0.25, 0.1, 0.15, 1.55);
+        @media (max-width: 640px) {
+            opacity: 0.5;
+        }
     }
 
     &::before {
@@ -38,6 +41,9 @@
         -moz-border-radius: 0 25px 25px 0;
         -ms-border-radius: 0 25px 25px 0;
         -o-border-radius: 0 25px 25px 0;
+        @media (max-width: 640px) {
+            content: 'A';
+        }
     }
 
     &::after {
@@ -49,6 +55,9 @@
         -moz-border-radius: 25px 0 0 25px;
         -ms-border-radius: 25px 0 0 25px;
         -o-border-radius: 25px 0 0 25px;
+        @media (max-width: 640px) {
+            content: 'S';
+        }
     }
 
     h2 {

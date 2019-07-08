@@ -1,7 +1,7 @@
 .classes {
     margin-top: var(--space);
     padding: 100px var(--space);
-    background-image: url('../img/stock/for-cta.jpeg');
+    background-image: url('../img/stock/big-header.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -30,18 +30,6 @@
         width: 100%;
         max-width: 400px;
         text-align: center;
-        transition: 0.25s;
-        -webkit-transition: 0.25s;
-        -moz-transition: 0.25s;
-        -ms-transition: 0.25s;
-        -o-transition: 0.25s;
-
-        &:hover {
-            transform: scale(1.25);
-            -webkit-transform: scale(1.25);
-            -moz-transform: scale(1.25);
-            -ms-transform: scale(1.25);
-            -o-transform: scale(1.25);
-}
+        cursor: pointer;
     }
 }

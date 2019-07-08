@@ -53,13 +53,6 @@
         line-height: 2;
     }
 
-    li::first-letter {
-        color: #fff;
-        padding: 5px 10px;
-        margin-right: 5px;
-        background: var(--accent-color);
-    }
-
     p,
     h4,
     ul {
@@ -84,7 +77,7 @@
 }
 
 .car-img-1 {
-    background-image: url('../img/stock/clients.jpeg');
+    background-image: url('../img/stock/for-cta.jpeg');
 }
 
 .car-img-2 {

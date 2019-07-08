@@ -1,5 +1,5 @@
 .hero {
-    background-image: url('../img/stock/little-header.jpeg');
+    background-image: url('../../img/stock/clients.jpeg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -9,7 +9,6 @@
 
     @media (min-width: 640px) {
         grid-template-columns: 1fr 1fr;
-        background-image: url('../img/stock/big-header.jpeg');
     }
 }
 
@@ -73,17 +72,6 @@
                 top: -5px
             }
         }
-    }
-
-    li:first-letter {
-        background: var(--accent-color);
-        padding: 5px 10px;
-        margin: 5px;
-        border-radius: 50px;
-        -webkit-border-radius: 50px;
-        -moz-border-radius: 50px;
-        -ms-border-radius: 50px;
-        -o-border-radius: 50px;
     }
 
     background: #0008;
